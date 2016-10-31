@@ -14,6 +14,7 @@ function apt-install {
 }
 
 function retry {
+    # inspired by:
     # http://unix.stackexchange.com/questions/82598/how-do-i-write-a-retry-logic-in-script-to-keep-retrying-to-run-it-upto-5-times
     local n=1
     local max=5
