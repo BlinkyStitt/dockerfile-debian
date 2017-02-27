@@ -7,4 +7,4 @@ Check it out on Docker Hub: https://hub.docker.com/r/bwstitt/debian/
 
 Docker needs extra steps to clean up images after installing packages (https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/) and I've had terrible luck with the apt mirrors failing so I wrote a helper with Docker's best practices and retries. Use `docker-apt-install PACKAGE` instead of `apt-get install PACKAGE` and installs will be reliable and keep the image as small as possible.
 
-I still prefer to use https://hub.docker.com/r/bwstitt/alpine since it is way smaller, but a lot of things are easiest to install on Debian/Ubuntu since that is where the author develops them.
+I prefer to use https://hub.docker.com/r/bwstitt/alpine since it is way smaller, but a lot of things are easiest to install on Debian/Ubuntu.
