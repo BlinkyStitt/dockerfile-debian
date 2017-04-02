@@ -41,6 +41,9 @@ function retry {
 
 export DEBIAN_FRONTEND=noninteractive
 
+# stop apt from starting processes on install
+export RUNLEVEL=1
+
 echo "apt-key update:"
 apt-key update 2>&1
 
