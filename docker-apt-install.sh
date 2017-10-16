@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # helper to correctly do an 'apt-get install' inside a Dockerfile's RUN
 #
@@ -42,6 +42,7 @@ function retry {
 export DEBIAN_FRONTEND=noninteractive
 
 # stop apt from starting processes on install
+# /usr/sbin/policy-rc.d is setup to exit 101 by upstream
 export RUNLEVEL=1
 
 echo "apt-key update:"
